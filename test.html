@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="plug-in/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-lg-4 col-md-4 col-sm-3 main">
+            <div class="">
+                <div class="form-group text-center">
+                    <input type="file" id="excel-file" class="form-control">
+                </div>
+            </div>
+
+            <div class="h4"><span class="text-info">行数：</span><span class="row1 text-danger"></span></div>
+            <div class="h4"><span class="text-info">列数：</span><span class="col1 text-danger"></span></div>
+
+
+            <div class="jisuan ">
+                <div class="form-group">
+                    <label for=""> 需要求和的列名：</label>
+                    <input type="text" id="needSum" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="button" value="开始计算" id="start" class="btn btn-default btn-danger form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for=""> 计算结果为：</label>
+                    <input type="text" id="result" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="preview col-lg-8 col-md-6 col-sm-5">
+            <table class="previewData table table-bordered">
+
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="plug-in/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="plug-in/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="plug-in/xlsx.core.min.js"></script>
+    <script type="text/javascript" src="plug-in/baiduTemplate.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <!-- 渲染表格 -->
+    <script id="randerT" type="text/html">
+        <!-- <% console.log(data[0]); %> -->
+        <tr>
+            <% for(tit in data[0]){ %>
+                <th>
+                    <%=tit %>
+                </th>
+                <% } %>
+        </tr>
+        <% for(var i=0;i<data.length;i++){ %>
+            <% var item=data[i] %>
+                <tr>
+                    <% for(key in item){ %>
+                        <td>
+                            <%=item[key] %>
+                        </td>
+                        <% } %>
+                </tr>
+                <% } %>
+    </script>
+</body>
+
+</html>

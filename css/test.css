@@ -1,0 +1,50 @@
+table.previewData {
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #5F6F7E;
+    border-collapse: collapse;
+}
+
+table.previewData th {
+    border: 1px solid #5F6F7E;
+    background-color: #E2E2E2;
+    color: #000000;
+    text-align: center;
+    font-weight: normal;
+    padding: 2px 4px 2px 4px;
+    margin: 0;
+}
+
+table.previewData td {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #E2E2E2;
+}
+
+table.previewData input {
+    /* width: 80px; */
+    padding: 2px 4px 2px 4px;
+    margin: 0;
+    border: 2px solid #ffffff;
+}
+
+.previewData input:focus {
+    border: 2px solid #000000;
+}
+
+.preview {
+    padding: 20px;
+    margin-top: 50px;
+    overflow: scroll;
+    -moz-box-shadow: -10px 0px 20px #333333;
+    -webkit-box-shadow: -10px 0px 20px #333333;
+    box-shadow: -10px 0px 20px #333333;
+    height: 900px;
+    border-radius: 20px;
+}
+
+.main {
+    margin-top: 100px;
+    padding: 30px;
+}
