@@ -5,7 +5,7 @@ Js is used to operate Excel tables and realize automatic summation.
 
 #### 使用的插件：`js-xlsx`
 
-#### blog地址：`http://www.caomage.com`
+#### blog地址：![](http://www.caomage.com)
 
 #### 兼容性如图：
 
